@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "echo \"Running start script\""
+    "start": "echo \"Running start script\"",
+    "dev" : "lite-server"
   },
   "author": "Darek Tomyn",
   "license": "ISC",
