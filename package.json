@@ -6,11 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "start": "echo \"Running start script\"",
-    "dev" : "lite-server"
+    "dev": "lite-server",
+
+    "share": "lt --port 3000 --subdomain dareksolvera",
+    "doit": "npm-run-all --parallel dev share"
   },
   "author": "Darek Tomyn",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.2.2",
+    "npm-run-all": "^3.1.2"
   }
 }

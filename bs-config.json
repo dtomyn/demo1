@@ -1,8 +1,7 @@
-{
-    "browser": [
-        "chrome", 
-        "firefox", 
-        "microsoft-edge:http://localhost:3000",
-        "iexplore"
-        ]
+ {
+     "logLevel": "silent"
+     ,
+     "browser": [
+         "chrome"
+         ]
 }
