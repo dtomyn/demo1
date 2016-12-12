@@ -2,7 +2,6 @@
   "name": "demo1",
   "version": "0.0.1",
   "description": "Simple demonstration of npm as a build tool",
-
   "//": [
     "***in the future can add the below (adding quotes as necessary)***",
     "main: index.js",
@@ -11,22 +10,22 @@
     "npm start ... would normally startup something like node... but in this case just echos",
     "npm run dev ... will startup the lite-server... which is just like live-server and also uses browsersync",
     "npm run share ... will startup the local tunnel to https://dareksolvera.localtunnel.me that everyone can test to watch with",
-    "npm run doit ... will startup both dev and share"
-    ],
-
+    "npm run doit ... will startup both dev and share",
+    "npm run security-check ... will make use of the npm install -save-dev nsp (node security project https://nodesecurity.io/)"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "start": "echo \"Running start script\"",
-    
     "dev": "lite-server",
-
-    "share": "lt --port 3000 --subdomain dareksolvera", 
-    "doit": "npm-run-all --parallel dev share"
+    "security-check": "nsp check",
+    "share": "lt --port 3000 --subdomain dareksolvera",
+    "doit": "npm-run-all --parallel security-check dev share"
   },
   "author": "Darek Tomyn",
   "license": "MIT",
   "devDependencies": {
     "lite-server": "^2.2.2",
-    "npm-run-all": "^3.1.2"
+    "npm-run-all": "^3.1.2",
+    "nsp": "^2.6.2"
   }
 }
